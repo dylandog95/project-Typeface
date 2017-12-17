@@ -1,0 +1,142 @@
+/* CSS Document */
+
+body {
+	margin: auto 0;
+	font-family: 'Source Serif Pro', serif;
+}
+
+/*Headers*/
+
+header {
+	display: flex;
+	background-color: lightgrey;
+	align-items: center;
+	border-bottom: 1px solid;
+}
+
+header img {
+	height: 40px;
+	margin: 20px;
+}
+header h1 {
+	margin: 20px;
+	font-size: 16px;
+	color: white;
+}
+
+/*Main Bodies*/
+.wrapper {
+	
+}
+main {
+	display: grid;
+	grid-template-areas: "sideBar mainBody";
+	grid-gap: 10px;
+	justify-content: center;
+}
+.sideBar {
+	grid-area: sideBar;
+	width: 300px;
+	background-color: lightgrey;
+	list-style-type: none;
+	border-right: 1px solid;
+}
+.sideBar li {
+	margin: 10px;
+}
+.sideBar li a {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+}
+#thisPage {
+	color: #306FF0;
+	margin-left: 20px;
+}
+.sideBar li a:hover {
+	color: #306FF0;
+	margin-left: 20px;
+}
+.sideBar .indentWebDesign {
+	margin-left: 50px;
+	list-style-image: url(img/listitemimg.png);
+}
+.mainBody {
+	grid-area: mainBody;
+	min-width: 500px;
+	max-width: 1000px;
+	min-height: 1000px;
+	margin: 20px;
+	padding-left: 20px;
+	line-height: 30px;
+}
+.mainImg {
+	display: grid;
+	justify-content: center;
+}
+.mainImg img {
+	height: 500px;
+	align-self: center;
+	border: 2px solid #306FEE;
+}
+.mainImg dd {
+	display: inline-block;
+	background-color: lightgray;
+	padding: 4px;
+}
+.mainBody h2 {
+	border-bottom: 1px solid lightgrey;
+}
+.mainBody p {
+	background-color: white;
+}
+.nextPage {
+	display: grid;
+	justify-content: center;
+}
+.nextPage a {
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 8px;
+	border: 1px solid white;
+}
+.nextPage a:hover {
+	color: #306FEE;
+	border: 1px solid #306FEE;
+}
+.learn img {
+	height: 100px;
+}
+
+/*Footers*/
+footer {
+	background-color: black;
+	width: auto;
+	height: 500px;
+	color: white;
+}
+
+footer img {
+	margin: 30px;
+	height: 50px;
+}
+
+.footerWrapper {
+	display: grid;
+	justify-content: center;
+	height: 350px;
+}
+.worksCitedFooter {
+	min-width: 800px;
+	max-width: 1000px;
+}
+.worksCitedFooter ol li {
+	margin: 20px;
+}
+#copyright {
+	align-self: end;
+	text-align: center;
+}

@@ -1,0 +1,29 @@
+/* CSS Document */
+
+body {
+	background-color: black;
+	font-family: 'Source Serif Pro', serif;
+	color: white;
+}
+
+.head {
+	display: grid;
+	height: 100px;
+	align-items: center;
+	grid-template-areas: "logo h2";
+	justify-content: left;
+}
+.head h2 {
+	margin: 20px;
+}
+
+main {
+	display: grid;
+	min-width: 800px;
+	max-width: 1200px;
+	justify-content: center;
+}
+
+main ol li {
+	margin: 35px;
+}
